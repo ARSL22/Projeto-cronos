@@ -1,0 +1,58 @@
+<DOCTYPE HTML>
+<html>
+<head>
+<h1>APT</h1>
+</head>
+<body><header>
+<div>
+    <img src="Logo APT.jpg" alt="Logo">
+</div>
+<ul>
+    <li><a href="https://github.com/ARSL22/">github</a></li>
+    <li><a href="https://kajannaj@gmail.com" >Email</a></li>
+    <li><a href="https://wa.me/11999999999">whatsapp</a></li>
+</ul>
+    </header>
+    
+    <main>
+<section class="container">
+    <div class="name">
+        <h1>APT</h1>
+        <h5>Apps para Todos</h5>
+</div>
+
+<div onclick="displayAbout()" id="arrow">
+    <i id="animation" class="fa-solid fa-caret-down"></i>    
+</div>
+
+<div style="display: none" id="about">
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, ipsum.
+</p>
+
+</div>
+
+<div class="form">
+<div>
+    <p>Deixe o seu contacto!</p>
+</div>
+<form action="">
+    <input type="text" placeholder="seu melhor email :)">
+<button> Enviar!</button>
+</form>
+</div>
+</section>
+    </main>
+
+<script>
+
+    function displayAbout(){
+    var arrow = document.getElementById('animation');
+    arrow.classList.toggle('rotate');
+    var display = document.getElementById('about');
+    display.classList.toggle('active');
+
+    }
+</script>
+</body>
+</html>
